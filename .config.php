@@ -8,10 +8,10 @@
 
 
 //基本设置-----------------------------------------------------------------------
-$System_Config['key'] = '209224407';			// !!! 瞎 jb 修改此key为随机字符串确保网站安全 !!!
+$System_Config['key'] = '209224ghtfrGGHJHd407';			// !!! 瞎 jb 修改此key为随机字符串确保网站安全 !!!
 $System_Config['debug'] =  'false';  //  正式环境请确保为 false
-$System_Config['appName'] = '我是站点名';             //站点名称
-$System_Config['baseUrl'] = 'http://url.com';            // 站点地址
+$System_Config['appName'] = '乐加速';             //站点名称
+$System_Config['baseUrl'] = 'http://jiasu.fun';            // 站点地址
 $System_Config['muKey'] = 'marisn';   //用于校验ss-go mu的请求，可以随意修改，但请保持前后端一致
 $System_Config['db_driver'] = 'mysql';		//数据库程序
 $System_Config['db_host'] = 'localhost'; //数据库地址
@@ -53,19 +53,19 @@ $System_Config['defaultTraffic'] = '1';      				//用户初始流量 单位GB
 $System_Config['user_expire_in_default']='3650';        	//用户账户过期时间，在注册时设置。（天）
 $System_Config['user_class_default']='0';      				//用户注册等级，在注册时设置。
 $System_Config['user_class_expire_default']='24';      		//用户等级过期时间，在注册时设置。（小时）
-$System_Config['user_conn']='0';      						//用户注册客户端数量限制，0为不限制
+$System_Config['user_conn']='2';      						//用户注册客户端数量限制，0为不限制
 $System_Config['user_speedlimit']='0';      				//用户注册速度默认限制，0为不限制
 $System_Config['reg_auto_reset_day']='0';      				//注册时的流量重置日，0为不重置
 $System_Config['reg_auto_reset_bandwidth']='0'; 			//需要重置的流量，0为不重置
 $System_Config['ramdom_group']='0';      					//注册时随机分组，注册时随机分配到的分组，多个分组请用英文半角逗号分隔。
-$System_Config['reg_method']='rc4-md5';      				//注册时默认加密方式
+$System_Config['reg_method']='aes-256-cfb';      				//注册时默认加密方式
 $System_Config['reg_protocol']='origin';      				//注册时默认协议
 $System_Config['reg_protocol_param']='';      				//注册时默认协议参数
 $System_Config['reg_obfs']='plain';      					//注册时默认混淆方式
 $System_Config['reg_obfs_param']='';      					//注册时默认混淆参数
 $System_Config['reg_forbidden_ip']='127.0.0.0/8,::1/128';   //注册时默认禁止访问IP列表，半角英文逗号分割
-$System_Config['min_port']='10000';      					//用户端口池最小值
-$System_Config['max_port']='65535';      					//用户端口池最大值
+$System_Config['min_port']='33333';      					//用户端口池最小值
+$System_Config['max_port']='44444';      					//用户端口池最大值
 $System_Config['reg_forbidden_port']='';      				//注册时默认禁止访问端口列表，半角英文逗号分割，支持端口段
 $System_Config['mu_suffix']='microsoft.com';     			//单端口多用户混淆参数后缀，可以随意修改，但请保持前后端一致
 $System_Config['mu_regex']='%5m%id.%suffix';      			//单端口多用户混淆参数表达式，%5m代表取用户特征 md5 的前五位，%id 代表用户id,%suffix 代表上面这个后缀。
